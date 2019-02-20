@@ -39,7 +39,7 @@ Exécution du script
     python contairerarchivage.py
     
     
-    CentOS and RHEL
+CentOS and RHEL
 ----------
 
 Installation de Python
