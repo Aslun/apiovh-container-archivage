@@ -4,8 +4,6 @@
            :alt: Python & OVH APIs
 
 
-[![Build Status](https://travis-ci.org/ovh/php-ovh.svg)]()
-
 Configuration du script python
 ----------
 
@@ -14,15 +12,12 @@ Configuration du script python
 
     # -*- encoding: utf-8 -*-
 
-    import ovh
-
     # Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
-    # to get your credentials
     client = ovh.Client(
         endpoint='ovh-eu',
-        application_key='<application key>',
-        application_secret='<application secret>',
-        consumer_key='<consumer key>',
+        application_key='<application key>', # <= votre Key
+        application_secret='<application secret>', # <= votre Secret
+        consumer_key='<consumer key>', # <= votre Consumer
     )
 
 
