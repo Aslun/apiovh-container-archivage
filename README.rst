@@ -3,6 +3,9 @@
 .. image:: https://github.com/ovh/python-ovh/raw/master/docs/img/logo.png
            :alt: Python & OVH APIs
 
+.. image:: https://travis-ci.org/ovh/python-ovh.svg?branch=master
+           :alt: Build Status
+           :target: #
 
 Configuration du script python
 ----------
