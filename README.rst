@@ -1,5 +1,4 @@
 # apiovh-container-archivage
-Création d'un container Ovh Cloud automatiquement avec ID unique et datacenter aléatoire
 
 .. image:: https://github.com/ovh/python-ovh/raw/master/docs/img/logo.png
            :alt: Python & OVH APIs
@@ -10,7 +9,14 @@ Création d'un container Ovh Cloud automatiquement avec ID unique et datacenter 
 Configuration du script python
 ----------
 
-  # Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+
+.. code:: python
+
+    # -*- encoding: utf-8 -*-
+
+    import ovh
+
+    # Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
     # to get your credentials
     client = ovh.Client(
         endpoint='ovh-eu',
@@ -18,6 +24,9 @@ Configuration du script python
         application_secret='<application secret>',
         consumer_key='<consumer key>',
     )
+
+
+
 
 Debian & Distributions dérivées de Debian
 ----------
