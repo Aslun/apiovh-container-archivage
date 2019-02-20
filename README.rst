@@ -37,3 +37,19 @@ Installation pip de OVH
 Exécution du script
 
     python contairerarchivage.py
+    
+    
+    CentOS and RHEL
+----------
+
+Installation de Python
+
+    yum install epel-release & python-pip
+
+Installation pip de OVH
+
+    pip install ovh
+    
+Exécution du script
+
+    python contairerarchivage.py
