@@ -3,9 +3,13 @@ Création d'un container Ovh Cloud automatiquement avec ID unique et datacenter 
 
 [![Build Status](https://travis-ci.org/ovh/php-ovh.svg)]()
 
-Quickstart
+Debian & Distributions dérivées de Debian
 ----------
 
-Avoir Python sur votre machine ! et d'avoir le module OVH.
+Installation de Python
+
+    apt install python & python-pip
+
+Installation pip de OVH
 
     pip install ovh
