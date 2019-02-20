@@ -4,6 +4,7 @@ Création d'un container Ovh Cloud automatiquement avec ID unique et datacenter 
 .. image:: https://github.com/ovh/python-ovh/raw/master/docs/img/logo.png
            :alt: Python & OVH APIs
 
+
 [![Build Status](https://travis-ci.org/ovh/php-ovh.svg)]()
 
 Configuration du script python
