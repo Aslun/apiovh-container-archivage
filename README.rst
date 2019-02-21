@@ -16,16 +16,11 @@ Configuration du script python
     # -*- encoding: utf-8 -*-
 
     # Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
-    client = ovh.Client(
-        endpoint='ovh-eu',
-        application_key='<application key>', # <= votre Key
-        application_secret='<application secret>', # <= votre Secret
-        consumer_key='<consumer key>', # <= votre Consumer
+           KEY = '' 		# Votre key apps ovh 
+           CONSKEY = ''	# Votre apps secret OVH
+           SECRET = ''		# Votre consumer key OVH   er
     )
-    result = client.post('/cloud/project/<IDPROJECT>/storage', # ID Project de votre OVH Cloud
-    archive=True, # Container d'archivage False pour un container non archivage
-    containerName=uppercase_str, # Nom aléatoire
-    region=random.choice(datacenter), # Choix du datacenter alétoire
+   
 
 
 
