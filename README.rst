@@ -10,6 +10,9 @@
 Configuration du script python
 ----------
 
+Editer le fichier config.py
+
+           nano config.py
 
 .. code:: python
 
