@@ -29,7 +29,9 @@ Editer le fichier createcontainer.py
            nano createcontainer.py
 
 .. code:: python
-       # -*- encoding: utf-8 -*-
+
+     # -*- encoding: utf-8 -*-
+      
      #Exécution de l'API OVH
     result = client.post('/cloud/project/ID DU PROJET/storage', # ID Project de votre OVH Cloud
     archive=True, # Container d'archivage
