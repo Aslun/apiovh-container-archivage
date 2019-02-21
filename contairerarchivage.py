@@ -1,3 +1,5 @@
+#! usr/bin/python 
+# -*- coding: ISO-8859-1 -*- 
 ##########################################################
 #     ___         __                                     #
 #    /   |  _____/ /_  ______                            #
@@ -9,6 +11,7 @@
 # Twitter : https://twitter.com/bastlanguedoc?lang=fr    #
 ##########################################################
 
+# coding: utf-8
 
 #Import
 import json
@@ -17,6 +20,7 @@ import string
 import uuid
 import smtplib
 import random
+import config
 # import time, math, urllib2, urllib, os, shutil, zipfile, smtplib, sys
 
 # Function choix datacenter aléatoire + ID aléatoire
@@ -25,16 +29,18 @@ lowercase_str = uuid.uuid4().hex
 uppercase_str = lowercase_str.upper()
 uppercase_str
 
+
+
 #Code apps OVH API
 client = ovh.Client(
     endpoint='ovh-eu',              
-    application_key='KEY',  # Votre key apps ovh 
-    application_secret='SECRET', # Votre apps secret OVH
-    consumer_key='CONSKEY',  #  Votre consumer key OVH   
+    application_key=config.KEY, 
+    application_secret=config.SECRET, 
+    consumer_key=config.CONSKEY,  
 )
 
 #Exécution de l'API OVH
-result = client.post('/cloud/project/IDPROJECT/storage', # ID Project de votre OVH Cloud
+result = client.post('/cloud/project/8e759a7a7a26449eb1e61d11d26a3853/storage', # ID Project de votre OVH Cloud
     archive=True, # Container d'archivage
     containerName=uppercase_str, # Nom aléatoire
     region=random.choice(datacenter), # Choix du datacenter alétoire
